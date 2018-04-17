@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182508ED2085ADEA00A4DB9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182508EC2085ADEA00A4DB9A /* AppDelegate.m */; };
+		182508F02085ADEA00A4DB9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182508EF2085ADEA00A4DB9A /* ViewController.m */; };
+		182508F32085ADEA00A4DB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182508F12085ADEA00A4DB9A /* Main.storyboard */; };
+		182508F62085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 182508F42085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld */; };
+		182508F82085ADEA00A4DB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182508F72085ADEA00A4DB9A /* Assets.xcassets */; };
+		182508FB2085ADEA00A4DB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182508F92085ADEA00A4DB9A /* LaunchScreen.storyboard */; };
+		182508FE2085ADEA00A4DB9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182508FD2085ADEA00A4DB9A /* main.m */; };
+		182509082085ADEB00A4DB9A /* NarolaGroupsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509072085ADEB00A4DB9A /* NarolaGroupsTests.m */; };
+		182509132085ADEB00A4DB9A /* NarolaGroupsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509122085ADEB00A4DB9A /* NarolaGroupsUITests.m */; };
+		1825092C2085AF1800A4DB9A /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825092A2085AF1800A4DB9A /* LoginVC.m */; };
+		1825092D2085AF1800A4DB9A /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825092B2085AF1800A4DB9A /* LoginVC.xib */; };
+		182509312085AF3900A4DB9A /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825092F2085AF3900A4DB9A /* SignUpVC.m */; };
+		182509322085AF3900A4DB9A /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182509302085AF3900A4DB9A /* SignUpVC.xib */; };
+		182509362085AF4700A4DB9A /* ChangePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509342085AF4700A4DB9A /* ChangePassword.m */; };
+		182509372085AF4700A4DB9A /* ChangePassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182509352085AF4700A4DB9A /* ChangePassword.xib */; };
+		1825093B2085AF5600A4DB9A /* ForgotPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509392085AF5600A4DB9A /* ForgotPassword.m */; };
+		1825093C2085AF5600A4DB9A /* ForgotPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825093A2085AF5600A4DB9A /* ForgotPassword.xib */; };
+		182509402085AF6500A4DB9A /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825093E2085AF6500A4DB9A /* ProfileVC.m */; };
+		182509412085AF6500A4DB9A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825093F2085AF6500A4DB9A /* ProfileVC.xib */; };
+		1825094D2085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509462085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m */; };
+		1825094E2085B32600A4DB9A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509482085B32600A4DB9A /* TPKeyboardAvoidingScrollView.m */; };
+		1825094F2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825094A2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m */; };
+		182509502085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825094C2085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		1825095C2085B33C00A4DB9A /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509532085B33C00A4DB9A /* SVIndefiniteAnimatedView.m */; };
+		1825095D2085B33C00A4DB9A /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509552085B33C00A4DB9A /* SVProgressAnimatedView.m */; };
+		1825095E2085B33C00A4DB9A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 182509572085B33C00A4DB9A /* SVProgressHUD.bundle */; };
+		1825095F2085B33C00A4DB9A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509592085B33C00A4DB9A /* SVProgressHUD.m */; };
+		182509602085B33C00A4DB9A /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825095B2085B33C00A4DB9A /* SVRadialGradientLayer.m */; };
+		182509632085B91300A4DB9A /* ServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509622085B91300A4DB9A /* ServerAPI.m */; };
+		182509662085BDC400A4DB9A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509652085BDC400A4DB9A /* Utils.m */; };
+		182509692085BDD900A4DB9A /* GlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509682085BDD900A4DB9A /* GlobalConstant.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182509042085ADEB00A4DB9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182508E02085ADEA00A4DB9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182508E72085ADEA00A4DB9A;
+			remoteInfo = NarolaGroups;
+		};
+		1825090F2085ADEB00A4DB9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182508E02085ADEA00A4DB9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182508E72085ADEA00A4DB9A;
+			remoteInfo = NarolaGroups;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182508E82085ADEA00A4DB9A /* NarolaGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarolaGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182508EB2085ADEA00A4DB9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		182508EC2085ADEA00A4DB9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		182508EE2085ADEA00A4DB9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		182508EF2085ADEA00A4DB9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		182508F22085ADEA00A4DB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		182508F52085ADEA00A4DB9A /* NarolaGroups.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NarolaGroups.xcdatamodel; sourceTree = "<group>"; };
+		182508F72085ADEA00A4DB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		182508FA2085ADEA00A4DB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		182508FC2085ADEA00A4DB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182508FD2085ADEA00A4DB9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182509032085ADEB00A4DB9A /* NarolaGroupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NarolaGroupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182509072085ADEB00A4DB9A /* NarolaGroupsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NarolaGroupsTests.m; sourceTree = "<group>"; };
+		182509092085ADEB00A4DB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825090E2085ADEB00A4DB9A /* NarolaGroupsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NarolaGroupsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182509122085ADEB00A4DB9A /* NarolaGroupsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NarolaGroupsUITests.m; sourceTree = "<group>"; };
+		182509142085ADEB00A4DB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182509292085AF1800A4DB9A /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		1825092A2085AF1800A4DB9A /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		1825092B2085AF1800A4DB9A /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		1825092E2085AF3900A4DB9A /* SignUpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
+		1825092F2085AF3900A4DB9A /* SignUpVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+		182509302085AF3900A4DB9A /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		182509332085AF4700A4DB9A /* ChangePassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePassword.h; sourceTree = "<group>"; };
+		182509342085AF4700A4DB9A /* ChangePassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePassword.m; sourceTree = "<group>"; };
+		182509352085AF4700A4DB9A /* ChangePassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassword.xib; sourceTree = "<group>"; };
+		182509382085AF5600A4DB9A /* ForgotPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgotPassword.h; sourceTree = "<group>"; };
+		182509392085AF5600A4DB9A /* ForgotPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgotPassword.m; sourceTree = "<group>"; };
+		1825093A2085AF5600A4DB9A /* ForgotPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPassword.xib; sourceTree = "<group>"; };
+		1825093D2085AF6500A4DB9A /* ProfileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
+		1825093E2085AF6500A4DB9A /* ProfileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
+		1825093F2085AF6500A4DB9A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		182509452085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		182509462085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		182509472085B32600A4DB9A /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		182509482085B32600A4DB9A /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		182509492085B32600A4DB9A /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		1825094A2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		1825094B2085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		1825094C2085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		182509522085B33C00A4DB9A /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		182509532085B33C00A4DB9A /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		182509542085B33C00A4DB9A /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		182509552085B33C00A4DB9A /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		182509562085B33C00A4DB9A /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		182509572085B33C00A4DB9A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		182509582085B33C00A4DB9A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		182509592085B33C00A4DB9A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		1825095A2085B33C00A4DB9A /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		1825095B2085B33C00A4DB9A /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		182509612085B91300A4DB9A /* ServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAPI.h; sourceTree = "<group>"; };
+		182509622085B91300A4DB9A /* ServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAPI.m; sourceTree = "<group>"; };
+		182509642085BDC400A4DB9A /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		182509652085BDC400A4DB9A /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		182509672085BDD900A4DB9A /* GlobalConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConstant.h; sourceTree = "<group>"; };
+		182509682085BDD900A4DB9A /* GlobalConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConstant.m; sourceTree = "<group>"; };
+		1825096A2085C50A00A4DB9A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182508E52085ADEA00A4DB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182509002085ADEB00A4DB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1825090B2085ADEB00A4DB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182508DF2085ADEA00A4DB9A = {
+			isa = PBXGroup;
+			children = (
+				182508EA2085ADEA00A4DB9A /* NarolaGroups */,
+				182509062085ADEB00A4DB9A /* NarolaGroupsTests */,
+				182509112085ADEB00A4DB9A /* NarolaGroupsUITests */,
+				182508E92085ADEA00A4DB9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182508E92085ADEA00A4DB9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182508E82085ADEA00A4DB9A /* NarolaGroups.app */,
+				182509032085ADEB00A4DB9A /* NarolaGroupsTests.xctest */,
+				1825090E2085ADEB00A4DB9A /* NarolaGroupsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182508EA2085ADEA00A4DB9A /* NarolaGroups */ = {
+			isa = PBXGroup;
+			children = (
+				182509422085AFA300A4DB9A /* Constants */,
+				182509432085AFA300A4DB9A /* ServerAPI */,
+				182509272085AEA900A4DB9A /* Controller */,
+				182509202085AEA800A4DB9A /* Database */,
+				182509232085AEA800A4DB9A /* Frameworks */,
+				182509242085AEA800A4DB9A /* Library */,
+				182509252085AEA800A4DB9A /* Localization */,
+				182509262085AEA900A4DB9A /* Model */,
+				182509212085AEA800A4DB9A /* Views */,
+				182508F72085ADEA00A4DB9A /* Assets.xcassets */,
+				182508F12085ADEA00A4DB9A /* Main.storyboard */,
+				182508F92085ADEA00A4DB9A /* LaunchScreen.storyboard */,
+				182508FC2085ADEA00A4DB9A /* Info.plist */,
+				182508FD2085ADEA00A4DB9A /* main.m */,
+			);
+			path = NarolaGroups;
+			sourceTree = "<group>";
+		};
+		182509062085ADEB00A4DB9A /* NarolaGroupsTests */ = {
+			isa = PBXGroup;
+			children = (
+				182509072085ADEB00A4DB9A /* NarolaGroupsTests.m */,
+				182509092085ADEB00A4DB9A /* Info.plist */,
+			);
+			path = NarolaGroupsTests;
+			sourceTree = "<group>";
+		};
+		182509112085ADEB00A4DB9A /* NarolaGroupsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				182509122085ADEB00A4DB9A /* NarolaGroupsUITests.m */,
+				182509142085ADEB00A4DB9A /* Info.plist */,
+			);
+			path = NarolaGroupsUITests;
+			sourceTree = "<group>";
+		};
+		182509202085AEA800A4DB9A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				182508F42085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		182509212085AEA800A4DB9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1825092B2085AF1800A4DB9A /* LoginVC.xib */,
+				182509302085AF3900A4DB9A /* SignUpVC.xib */,
+				182509352085AF4700A4DB9A /* ChangePassword.xib */,
+				1825093A2085AF5600A4DB9A /* ForgotPassword.xib */,
+				1825093F2085AF6500A4DB9A /* ProfileVC.xib */,
+				182509222085AEA800A4DB9A /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		182509222085AEA800A4DB9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		182509232085AEA800A4DB9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		182509242085AEA800A4DB9A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				182509512085B33C00A4DB9A /* SVProgressHUD */,
+				182509442085B32600A4DB9A /* TPKeyboardAvoiding */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		182509252085AEA800A4DB9A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		182509262085AEA900A4DB9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182509272085AEA900A4DB9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182509282085AEA900A4DB9A /* Cells */,
+				182508EB2085ADEA00A4DB9A /* AppDelegate.h */,
+				182508EC2085ADEA00A4DB9A /* AppDelegate.m */,
+				182508EE2085ADEA00A4DB9A /* ViewController.h */,
+				182508EF2085ADEA00A4DB9A /* ViewController.m */,
+				182509292085AF1800A4DB9A /* LoginVC.h */,
+				1825092A2085AF1800A4DB9A /* LoginVC.m */,
+				1825092E2085AF3900A4DB9A /* SignUpVC.h */,
+				1825092F2085AF3900A4DB9A /* SignUpVC.m */,
+				182509332085AF4700A4DB9A /* ChangePassword.h */,
+				182509342085AF4700A4DB9A /* ChangePassword.m */,
+				182509382085AF5600A4DB9A /* ForgotPassword.h */,
+				182509392085AF5600A4DB9A /* ForgotPassword.m */,
+				1825093D2085AF6500A4DB9A /* ProfileVC.h */,
+				1825093E2085AF6500A4DB9A /* ProfileVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182509282085AEA900A4DB9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		182509422085AFA300A4DB9A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				182509642085BDC400A4DB9A /* Utils.h */,
+				182509652085BDC400A4DB9A /* Utils.m */,
+				182509672085BDD900A4DB9A /* GlobalConstant.h */,
+				182509682085BDD900A4DB9A /* GlobalConstant.m */,
+				1825096A2085C50A00A4DB9A /* PrefixHeader.pch */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		182509432085AFA300A4DB9A /* ServerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				182509612085B91300A4DB9A /* ServerAPI.h */,
+				182509622085B91300A4DB9A /* ServerAPI.m */,
+			);
+			path = ServerAPI;
+			sourceTree = "<group>";
+		};
+		182509442085B32600A4DB9A /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				182509452085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.h */,
+				182509462085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m */,
+				182509472085B32600A4DB9A /* TPKeyboardAvoidingScrollView.h */,
+				182509482085B32600A4DB9A /* TPKeyboardAvoidingScrollView.m */,
+				182509492085B32600A4DB9A /* TPKeyboardAvoidingTableView.h */,
+				1825094A2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m */,
+				1825094B2085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				1825094C2085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		182509512085B33C00A4DB9A /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				182509522085B33C00A4DB9A /* SVIndefiniteAnimatedView.h */,
+				182509532085B33C00A4DB9A /* SVIndefiniteAnimatedView.m */,
+				182509542085B33C00A4DB9A /* SVProgressAnimatedView.h */,
+				182509552085B33C00A4DB9A /* SVProgressAnimatedView.m */,
+				182509562085B33C00A4DB9A /* SVProgressHUD-Prefix.pch */,
+				182509572085B33C00A4DB9A /* SVProgressHUD.bundle */,
+				182509582085B33C00A4DB9A /* SVProgressHUD.h */,
+				182509592085B33C00A4DB9A /* SVProgressHUD.m */,
+				1825095A2085B33C00A4DB9A /* SVRadialGradientLayer.h */,
+				1825095B2085B33C00A4DB9A /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182508E72085ADEA00A4DB9A /* NarolaGroups */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182509172085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroups" */;
+			buildPhases = (
+				182508E42085ADEA00A4DB9A /* Sources */,
+				182508E52085ADEA00A4DB9A /* Frameworks */,
+				182508E62085ADEA00A4DB9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NarolaGroups;
+			productName = NarolaGroups;
+			productReference = 182508E82085ADEA00A4DB9A /* NarolaGroups.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182509022085ADEB00A4DB9A /* NarolaGroupsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1825091A2085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroupsTests" */;
+			buildPhases = (
+				182508FF2085ADEB00A4DB9A /* Sources */,
+				182509002085ADEB00A4DB9A /* Frameworks */,
+				182509012085ADEB00A4DB9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182509052085ADEB00A4DB9A /* PBXTargetDependency */,
+			);
+			name = NarolaGroupsTests;
+			productName = NarolaGroupsTests;
+			productReference = 182509032085ADEB00A4DB9A /* NarolaGroupsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1825090D2085ADEB00A4DB9A /* NarolaGroupsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1825091D2085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroupsUITests" */;
+			buildPhases = (
+				1825090A2085ADEB00A4DB9A /* Sources */,
+				1825090B2085ADEB00A4DB9A /* Frameworks */,
+				1825090C2085ADEB00A4DB9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182509102085ADEB00A4DB9A /* PBXTargetDependency */,
+			);
+			name = NarolaGroupsUITests;
+			productName = NarolaGroupsUITests;
+			productReference = 1825090E2085ADEB00A4DB9A /* NarolaGroupsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182508E02085ADEA00A4DB9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = VPN;
+				TargetAttributes = {
+					182508E72085ADEA00A4DB9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					182509022085ADEB00A4DB9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 182508E72085ADEA00A4DB9A;
+					};
+					1825090D2085ADEB00A4DB9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 182508E72085ADEA00A4DB9A;
+					};
+				};
+			};
+			buildConfigurationList = 182508E32085ADEA00A4DB9A /* Build configuration list for PBXProject "NarolaGroups" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182508DF2085ADEA00A4DB9A;
+			productRefGroup = 182508E92085ADEA00A4DB9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182508E72085ADEA00A4DB9A /* NarolaGroups */,
+				182509022085ADEB00A4DB9A /* NarolaGroupsTests */,
+				1825090D2085ADEB00A4DB9A /* NarolaGroupsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182508E62085ADEA00A4DB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182509412085AF6500A4DB9A /* ProfileVC.xib in Resources */,
+				1825095E2085B33C00A4DB9A /* SVProgressHUD.bundle in Resources */,
+				182508FB2085ADEA00A4DB9A /* LaunchScreen.storyboard in Resources */,
+				182508F82085ADEA00A4DB9A /* Assets.xcassets in Resources */,
+				182509322085AF3900A4DB9A /* SignUpVC.xib in Resources */,
+				1825092D2085AF1800A4DB9A /* LoginVC.xib in Resources */,
+				1825093C2085AF5600A4DB9A /* ForgotPassword.xib in Resources */,
+				182509372085AF4700A4DB9A /* ChangePassword.xib in Resources */,
+				182508F32085ADEA00A4DB9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182509012085ADEB00A4DB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1825090C2085ADEB00A4DB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182508E42085ADEA00A4DB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1825094D2085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				182509312085AF3900A4DB9A /* SignUpVC.m in Sources */,
+				182508F02085ADEA00A4DB9A /* ViewController.m in Sources */,
+				182509502085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				182508F62085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld in Sources */,
+				1825095C2085B33C00A4DB9A /* SVIndefiniteAnimatedView.m in Sources */,
+				1825092C2085AF1800A4DB9A /* LoginVC.m in Sources */,
+				1825094E2085B32600A4DB9A /* TPKeyboardAvoidingScrollView.m in Sources */,
+				182509402085AF6500A4DB9A /* ProfileVC.m in Sources */,
+				1825095F2085B33C00A4DB9A /* SVProgressHUD.m in Sources */,
+				182509692085BDD900A4DB9A /* GlobalConstant.m in Sources */,
+				182508FE2085ADEA00A4DB9A /* main.m in Sources */,
+				182509662085BDC400A4DB9A /* Utils.m in Sources */,
+				182509362085AF4700A4DB9A /* ChangePassword.m in Sources */,
+				182509602085B33C00A4DB9A /* SVRadialGradientLayer.m in Sources */,
+				182509632085B91300A4DB9A /* ServerAPI.m in Sources */,
+				1825095D2085B33C00A4DB9A /* SVProgressAnimatedView.m in Sources */,
+				1825094F2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m in Sources */,
+				182508ED2085ADEA00A4DB9A /* AppDelegate.m in Sources */,
+				1825093B2085AF5600A4DB9A /* ForgotPassword.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182508FF2085ADEB00A4DB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182509082085ADEB00A4DB9A /* NarolaGroupsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1825090A2085ADEB00A4DB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182509132085ADEB00A4DB9A /* NarolaGroupsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182509052085ADEB00A4DB9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182508E72085ADEA00A4DB9A /* NarolaGroups */;
+			targetProxy = 182509042085ADEB00A4DB9A /* PBXContainerItemProxy */;
+		};
+		182509102085ADEB00A4DB9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182508E72085ADEA00A4DB9A /* NarolaGroups */;
+			targetProxy = 1825090F2085ADEB00A4DB9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		182508F12085ADEA00A4DB9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182508F22085ADEA00A4DB9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		182508F92085ADEA00A4DB9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182508FA2085ADEA00A4DB9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182509152085ADEB00A4DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		182509162085ADEB00A4DB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182509182085ADEB00A4DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroups/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182509192085ADEB00A4DB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroups/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1825091B2085ADEB00A4DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroupsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroupsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NarolaGroups.app/NarolaGroups";
+			};
+			name = Debug;
+		};
+		1825091C2085ADEB00A4DB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroupsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroupsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NarolaGroups.app/NarolaGroups";
+			};
+			name = Release;
+		};
+		1825091E2085ADEB00A4DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroupsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroupsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NarolaGroups;
+			};
+			name = Debug;
+		};
+		1825091F2085ADEB00A4DB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NarolaGroupsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroupsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NarolaGroups;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182508E32085ADEA00A4DB9A /* Build configuration list for PBXProject "NarolaGroups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182509152085ADEB00A4DB9A /* Debug */,
+				182509162085ADEB00A4DB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182509172085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182509182085ADEB00A4DB9A /* Debug */,
+				182509192085ADEB00A4DB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1825091A2085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroupsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1825091B2085ADEB00A4DB9A /* Debug */,
+				1825091C2085ADEB00A4DB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1825091D2085ADEB00A4DB9A /* Build configuration list for PBXNativeTarget "NarolaGroupsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1825091E2085ADEB00A4DB9A /* Debug */,
+				1825091F2085ADEB00A4DB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		182508F42085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				182508F52085ADEA00A4DB9A /* NarolaGroups.xcdatamodel */,
+			);
+			currentVersion = 182508F52085ADEA00A4DB9A /* NarolaGroups.xcdatamodel */;
+			path = NarolaGroups.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 182508E02085ADEA00A4DB9A /* Project object */;
+}
