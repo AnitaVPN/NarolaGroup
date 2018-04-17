@@ -34,4 +34,10 @@
 }
 */
 
+- (IBAction)btnLoginButtonClick:(id)sender {
+}
+- (IBAction)btnForgotPasswordClickEvent:(id)sender {
+}
+- (IBAction)btnSignUpClickEvent:(id)sender {
+}
 @end

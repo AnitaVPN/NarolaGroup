@@ -38,6 +38,8 @@
 		182509632085B91300A4DB9A /* ServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509622085B91300A4DB9A /* ServerAPI.m */; };
 		182509662085BDC400A4DB9A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509652085BDC400A4DB9A /* Utils.m */; };
 		182509692085BDD900A4DB9A /* GlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509682085BDD900A4DB9A /* GlobalConstant.m */; };
+		182509772085CF5800A4DB9A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182509752085CF5800A4DB9A /* Crashlytics.framework */; };
+		182509782085CF5800A4DB9A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182509762085CF5800A4DB9A /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		182509672085BDD900A4DB9A /* GlobalConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConstant.h; sourceTree = "<group>"; };
 		182509682085BDD900A4DB9A /* GlobalConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConstant.m; sourceTree = "<group>"; };
 		1825096A2085C50A00A4DB9A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		182509752085CF5800A4DB9A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		182509762085CF5800A4DB9A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182509772085CF5800A4DB9A /* Crashlytics.framework in Frameworks */,
+				182509782085CF5800A4DB9A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,8 @@
 		182509232085AEA800A4DB9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				182509752085CF5800A4DB9A /* Crashlytics.framework */,
+				182509762085CF5800A4DB9A /* Fabric.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -351,6 +359,7 @@
 				182508E42085ADEA00A4DB9A /* Sources */,
 				182508E52085ADEA00A4DB9A /* Frameworks */,
 				182508E62085ADEA00A4DB9A /* Resources */,
+				187F61FA2085D07D00BA52BF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -474,6 +483,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187F61FA2085D07D00BA52BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		182508E42085ADEA00A4DB9A /* Sources */ = {
@@ -663,6 +688,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NarolaGroups/Frameworks",
+				);
 				INFOPLIST_FILE = NarolaGroups/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;
@@ -676,6 +706,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NarolaGroups/Frameworks",
+				);
 				INFOPLIST_FILE = NarolaGroups/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;

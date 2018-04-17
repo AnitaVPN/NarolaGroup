@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)btnSignUpClickEvent:(id)sender {
+}
+
+- (IBAction)btnProfileImageClickEvent:(id)sender {
+}
 @end
