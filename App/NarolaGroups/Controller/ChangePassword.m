@@ -7,16 +7,20 @@
 //
 
 #import "ChangePassword.h"
+#import "Utils.h"
 
 @interface ChangePassword ()
-
+{
+    Utils *util;
+}
 @end
 
 @implementation ChangePassword
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    util = [[Utils alloc]init];
+    [self setupTextFeild];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +28,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+-(void)setupTextFeild
+{
+    [util setupTextFeild:_txtCurrentPass :[UIColor whiteColor] :YES :[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_password_white"]] :@"Enter Current Password"];
+    [util setupTextFeild:_txtNewPassword :[UIColor whiteColor] :YES :[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_password_white"]] :@"Enter New Password"];
+    [util setupTextFeild:_txtConformPassword :[UIColor whiteColor] :YES :[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_password_white"]] :@"Enter Confirm Password"];
+   
+    _btnChangePassword.layer.cornerRadius = 5;
+    _btnChangePassword.layer.borderWidth = .5;
+    _btnChangePassword.layer.borderColor = [UIColor whiteColor].CGColor;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.navigationItem.backBarButtonItem setTitle:@""];
 }
-*/
 
+- (IBAction)btnChangePasswordClickEvent:(id)sender {
+}
 @end

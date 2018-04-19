@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Utils : UIViewController
-
+-(UITextField *)setupTextFeild :(UITextField *)txtFeild :(UIColor *)txtTextColor :(BOOL)isLeftView :(UIImageView*)image :(NSString *)placeHolderText;
 @end

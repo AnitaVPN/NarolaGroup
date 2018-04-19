@@ -7,16 +7,49 @@
 //
 
 #import "AppDelegate.h"
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "LeftMenuVC.h"
+#import "HomeVC.h"
+#import "GlobalConstant.h"
+#import "MMDrawerController.h"
+//#import ""
+#import "MMExampleDrawerVisualStateManager.h"
+#import "MMNavigationController.h"
+
+#import "GuestHomeVC.h"
+#import "LoginVC.h"
+#import "SignUpVC.h"
+#import "ChangePassword.h"
+#import "ForgotPassword.h"
+#import "LeftMenuVC.h"
+
 
 @interface AppDelegate ()
-
+@property (nonatomic,strong) MMDrawerController * drawerController;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    
+    BOOL isUserActivate = [[NSUserDefaults standardUserDefaults]valueForKey:isUserLogin];
+    
+    
+    if(isUserActivate)
+    {
+        [self setupRootVCRegisterUser];
+
+    }
+    else
+    {
+        [self setupRootVC];
+
+    }
+    
+    
     return YES;
 }
 
@@ -93,6 +126,66 @@
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
+}
+
+
+#pragma mark - SetupRootVC
+-(void)setupRootVC
+{
+    
+    GuestHomeVC *vc = [[GuestHomeVC alloc]initWithNibName:@"GuestHomeVC" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    nav.navigationBarHidden = true;
+//    nav.navigationItem.n
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+  
+}
+-(void)setupRootVCRegisterUser
+{
+     UIViewController * leftSideDrawerViewController = [[LeftMenuVC alloc] init];
+    UIViewController * centerViewController = [[HomeVC alloc] init];
+     
+    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
+     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
+     //    UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
+     //    [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
+     UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
+     [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
+     self.drawerController = [[MMDrawerController alloc]
+     initWithCenterViewController:navigationController
+     leftDrawerViewController:leftSideNavController
+     rightDrawerViewController:nil];
+     
+     [self.drawerController setShowsShadow:NO];
+     [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+     [self.drawerController setMaximumRightDrawerWidth:200.0];
+     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+     
+     [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+     MMDrawerControllerDrawerVisualStateBlock block;
+     block = [[MMExampleDrawerVisualStateManager sharedManager]
+     drawerVisualStateBlockForDrawerSide:drawerSide];
+     if(block){
+     block(drawerController, drawerSide, percentVisible);
+     }
+     }];
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+     
+//     UIColor * tintColor = [UIColor colorWithRed:29.0/255.0
+//     green:173.0/255.0
+//     blue:234.0/255.0
+//     alpha:1.0];
+     //[self.window setTintColor:tintColor];
+    [self.window setTintColor:APP_BUTTONS_COLOR];
+    [self.window setBackgroundColor:APP_BUTTONS_COLOR];
+     self.drawerController.navigationController.navigationBarHidden = true;
+    
+     [self.window setRootViewController:self.drawerController];
+      [self.window makeKeyAndVisible];
 }
 
 @end

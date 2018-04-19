@@ -7,16 +7,31 @@
 //
 
 #import "ForgotPassword.h"
+#import "Utils.h"
 
 @interface ForgotPassword ()
-
+{
+    Utils *util;
+}
 @end
 
 @implementation ForgotPassword
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    util = [[Utils alloc]init];
+    [self textFeildSetup];
+    
+}
+-(void)textFeildSetup
+{
+    [util setupTextFeild:_txtEmailAddress :[UIColor whiteColor] :YES :[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_user_white"]] :@"Enter Email Address"];
+   
+    _btnForgotPassword.layer.cornerRadius = 5;
+    _btnForgotPassword.layer.borderWidth = .5;
+    _btnForgotPassword.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    [self.navigationItem.backBarButtonItem setTitle:@""];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +49,6 @@
 }
 */
 
+- (IBAction)btnForgotPasswordClickEvent:(id)sender {
+}
 @end

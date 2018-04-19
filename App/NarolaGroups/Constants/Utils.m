@@ -53,6 +53,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(UITextField *)setupTextFeild :(UITextField *)txtFeild :(UIColor *)txtTextColor :(BOOL)isLeftView :(UIImageView*)image :(NSString *)placeHolderText
+{
+    
+    UIImageView  * iconEmail = image;
+    iconEmail.frame = CGRectMake(5, 0.0, iconEmail.image.size.width+15.0, iconEmail.image.size.height);
+    iconEmail.contentMode = UIViewContentModeCenter;
+    
+    txtFeild.leftView = iconEmail;
+    txtFeild.leftViewMode = UITextFieldViewModeAlways;
+    
+    UIColor *color = txtTextColor;
+    
+    txtFeild.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHolderText attributes:@{NSForegroundColorAttributeName: color, NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Medium" size:14.0]}];
+    
+    txtFeild.layer.cornerRadius = 5;
+    //txtFeild.layer.borderWidth = .5;
+    
+    return txtFeild;
+}
 /*
 #pragma mark - Navigation
 

@@ -16,6 +16,8 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
+-(void)setupRootVCRegisterUser;
+-(void)setupRootVC;
 
 
 @end

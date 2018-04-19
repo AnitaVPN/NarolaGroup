@@ -40,6 +40,20 @@
 		182509692085BDD900A4DB9A /* GlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 182509682085BDD900A4DB9A /* GlobalConstant.m */; };
 		182509772085CF5800A4DB9A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182509752085CF5800A4DB9A /* Crashlytics.framework */; };
 		182509782085CF5800A4DB9A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182509762085CF5800A4DB9A /* Fabric.framework */; };
+		189A5CDF20873F2E00F3D032 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CD720873F2D00F3D032 /* MMDrawerBarButtonItem.m */; };
+		189A5CE020873F2E00F3D032 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CDA20873F2D00F3D032 /* MMDrawerController.m */; };
+		189A5CE120873F2E00F3D032 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CDC20873F2D00F3D032 /* MMDrawerVisualState.m */; };
+		189A5CE220873F2E00F3D032 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CDE20873F2D00F3D032 /* UIViewController+MMDrawerController.m */; };
+		189A5CE620873F4F00F3D032 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CE420873F4F00F3D032 /* LeftMenuVC.m */; };
+		189A5CE720873F4F00F3D032 /* LeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189A5CE520873F4F00F3D032 /* LeftMenuVC.xib */; };
+		189A5CEB2087433500F3D032 /* cell_sidemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CE92087433500F3D032 /* cell_sidemenu.m */; };
+		189A5CEC2087433500F3D032 /* cell_sidemenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189A5CEA2087433500F3D032 /* cell_sidemenu.xib */; };
+		189A5CF02087472F00F3D032 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CEE2087472F00F3D032 /* HomeVC.m */; };
+		189A5CF12087472F00F3D032 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189A5CEF2087472F00F3D032 /* HomeVC.xib */; };
+		189A5CF42087475C00F3D032 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CF32087475C00F3D032 /* MMNavigationController.m */; };
+		189A5CF72087477A00F3D032 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CF52087477900F3D032 /* MMExampleDrawerVisualStateManager.m */; };
+		189A5CFB20874ECF00F3D032 /* GuestHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A5CF920874ECF00F3D032 /* GuestHomeVC.m */; };
+		189A5CFC20874ECF00F3D032 /* GuestHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189A5CFA20874ECF00F3D032 /* GuestHomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +133,31 @@
 		1825096A2085C50A00A4DB9A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		182509752085CF5800A4DB9A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		182509762085CF5800A4DB9A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		189A5CD620873F2D00F3D032 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		189A5CD720873F2D00F3D032 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		189A5CD820873F2D00F3D032 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		189A5CD920873F2D00F3D032 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		189A5CDA20873F2D00F3D032 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		189A5CDB20873F2D00F3D032 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		189A5CDC20873F2D00F3D032 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		189A5CDD20873F2D00F3D032 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		189A5CDE20873F2D00F3D032 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		189A5CE320873F4F00F3D032 /* LeftMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuVC.h; sourceTree = "<group>"; };
+		189A5CE420873F4F00F3D032 /* LeftMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuVC.m; sourceTree = "<group>"; };
+		189A5CE520873F4F00F3D032 /* LeftMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuVC.xib; sourceTree = "<group>"; };
+		189A5CE82087433500F3D032 /* cell_sidemenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cell_sidemenu.h; sourceTree = "<group>"; };
+		189A5CE92087433500F3D032 /* cell_sidemenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cell_sidemenu.m; sourceTree = "<group>"; };
+		189A5CEA2087433500F3D032 /* cell_sidemenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell_sidemenu.xib; sourceTree = "<group>"; };
+		189A5CED2087472F00F3D032 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		189A5CEE2087472F00F3D032 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		189A5CEF2087472F00F3D032 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		189A5CF22087475B00F3D032 /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
+		189A5CF32087475C00F3D032 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
+		189A5CF52087477900F3D032 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		189A5CF62087477A00F3D032 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		189A5CF820874ECF00F3D032 /* GuestHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuestHomeVC.h; sourceTree = "<group>"; };
+		189A5CF920874ECF00F3D032 /* GuestHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuestHomeVC.m; sourceTree = "<group>"; };
+		189A5CFA20874ECF00F3D032 /* GuestHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuestHomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +257,7 @@
 		182509212085AEA800A4DB9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				189A5CE520873F4F00F3D032 /* LeftMenuVC.xib */,
 				1825092B2085AF1800A4DB9A /* LoginVC.xib */,
 				182509302085AF3900A4DB9A /* SignUpVC.xib */,
 				182509352085AF4700A4DB9A /* ChangePassword.xib */,
@@ -247,6 +287,7 @@
 		182509242085AEA800A4DB9A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				189A5CD520873F2D00F3D032 /* MMDrawerController */,
 				182509512085B33C00A4DB9A /* SVProgressHUD */,
 				182509442085B32600A4DB9A /* TPKeyboardAvoiding */,
 			);
@@ -270,6 +311,10 @@
 		182509272085AEA900A4DB9A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				189A5CF62087477A00F3D032 /* MMExampleDrawerVisualStateManager.h */,
+				189A5CF52087477900F3D032 /* MMExampleDrawerVisualStateManager.m */,
+				189A5CF22087475B00F3D032 /* MMNavigationController.h */,
+				189A5CF32087475C00F3D032 /* MMNavigationController.m */,
 				182509282085AEA900A4DB9A /* Cells */,
 				182508EB2085ADEA00A4DB9A /* AppDelegate.h */,
 				182508EC2085ADEA00A4DB9A /* AppDelegate.m */,
@@ -285,6 +330,14 @@
 				182509392085AF5600A4DB9A /* ForgotPassword.m */,
 				1825093D2085AF6500A4DB9A /* ProfileVC.h */,
 				1825093E2085AF6500A4DB9A /* ProfileVC.m */,
+				189A5CE320873F4F00F3D032 /* LeftMenuVC.h */,
+				189A5CE420873F4F00F3D032 /* LeftMenuVC.m */,
+				189A5CED2087472F00F3D032 /* HomeVC.h */,
+				189A5CEE2087472F00F3D032 /* HomeVC.m */,
+				189A5CEF2087472F00F3D032 /* HomeVC.xib */,
+				189A5CF820874ECF00F3D032 /* GuestHomeVC.h */,
+				189A5CF920874ECF00F3D032 /* GuestHomeVC.m */,
+				189A5CFA20874ECF00F3D032 /* GuestHomeVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +345,9 @@
 		182509282085AEA900A4DB9A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				189A5CE82087433500F3D032 /* cell_sidemenu.h */,
+				189A5CE92087433500F3D032 /* cell_sidemenu.m */,
+				189A5CEA2087433500F3D032 /* cell_sidemenu.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -347,6 +403,22 @@
 				1825095B2085B33C00A4DB9A /* SVRadialGradientLayer.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		189A5CD520873F2D00F3D032 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				189A5CD620873F2D00F3D032 /* MMDrawerBarButtonItem.h */,
+				189A5CD720873F2D00F3D032 /* MMDrawerBarButtonItem.m */,
+				189A5CD820873F2D00F3D032 /* MMDrawerController+Subclass.h */,
+				189A5CD920873F2D00F3D032 /* MMDrawerController.h */,
+				189A5CDA20873F2D00F3D032 /* MMDrawerController.m */,
+				189A5CDB20873F2D00F3D032 /* MMDrawerVisualState.h */,
+				189A5CDC20873F2D00F3D032 /* MMDrawerVisualState.m */,
+				189A5CDD20873F2D00F3D032 /* UIViewController+MMDrawerController.h */,
+				189A5CDE20873F2D00F3D032 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +489,7 @@
 				TargetAttributes = {
 					182508E72085ADEA00A4DB9A = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					182509022085ADEB00A4DB9A = {
 						CreatedOnToolsVersion = 9.2;
@@ -457,13 +529,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				182509412085AF6500A4DB9A /* ProfileVC.xib in Resources */,
+				189A5CF12087472F00F3D032 /* HomeVC.xib in Resources */,
 				1825095E2085B33C00A4DB9A /* SVProgressHUD.bundle in Resources */,
 				182508FB2085ADEA00A4DB9A /* LaunchScreen.storyboard in Resources */,
 				182508F82085ADEA00A4DB9A /* Assets.xcassets in Resources */,
+				189A5CE720873F4F00F3D032 /* LeftMenuVC.xib in Resources */,
 				182509322085AF3900A4DB9A /* SignUpVC.xib in Resources */,
 				1825092D2085AF1800A4DB9A /* LoginVC.xib in Resources */,
 				1825093C2085AF5600A4DB9A /* ForgotPassword.xib in Resources */,
 				182509372085AF4700A4DB9A /* ChangePassword.xib in Resources */,
+				189A5CFC20874ECF00F3D032 /* GuestHomeVC.xib in Resources */,
+				189A5CEC2087433500F3D032 /* cell_sidemenu.xib in Resources */,
 				182508F32085ADEA00A4DB9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,9 +581,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189A5CF72087477A00F3D032 /* MMExampleDrawerVisualStateManager.m in Sources */,
 				1825094D2085B32600A4DB9A /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				189A5CF42087475C00F3D032 /* MMNavigationController.m in Sources */,
 				182509312085AF3900A4DB9A /* SignUpVC.m in Sources */,
 				182508F02085ADEA00A4DB9A /* ViewController.m in Sources */,
+				189A5CE220873F2E00F3D032 /* UIViewController+MMDrawerController.m in Sources */,
 				182509502085B32600A4DB9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				182508F62085ADEA00A4DB9A /* NarolaGroups.xcdatamodeld in Sources */,
 				1825095C2085B33C00A4DB9A /* SVIndefiniteAnimatedView.m in Sources */,
@@ -516,10 +595,17 @@
 				182509402085AF6500A4DB9A /* ProfileVC.m in Sources */,
 				1825095F2085B33C00A4DB9A /* SVProgressHUD.m in Sources */,
 				182509692085BDD900A4DB9A /* GlobalConstant.m in Sources */,
+				189A5CFB20874ECF00F3D032 /* GuestHomeVC.m in Sources */,
 				182508FE2085ADEA00A4DB9A /* main.m in Sources */,
+				189A5CEB2087433500F3D032 /* cell_sidemenu.m in Sources */,
 				182509662085BDC400A4DB9A /* Utils.m in Sources */,
+				189A5CE120873F2E00F3D032 /* MMDrawerVisualState.m in Sources */,
+				189A5CDF20873F2E00F3D032 /* MMDrawerBarButtonItem.m in Sources */,
+				189A5CE020873F2E00F3D032 /* MMDrawerController.m in Sources */,
 				182509362085AF4700A4DB9A /* ChangePassword.m in Sources */,
 				182509602085B33C00A4DB9A /* SVRadialGradientLayer.m in Sources */,
+				189A5CE620873F4F00F3D032 /* LeftMenuVC.m in Sources */,
+				189A5CF02087472F00F3D032 /* HomeVC.m in Sources */,
 				182509632085B91300A4DB9A /* ServerAPI.m in Sources */,
 				1825095D2085B33C00A4DB9A /* SVProgressAnimatedView.m in Sources */,
 				1825094F2085B32600A4DB9A /* TPKeyboardAvoidingTableView.m in Sources */,
@@ -687,16 +773,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QR38U6E8CQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NarolaGroups/Frameworks",
 				);
+				GCC_PREFIX_HEADER = /Users/apple/Documents/Anita/Projects/NarolaGems/SourceTree/App/NarolaGroups/Constants/PrefixHeader.pch;
 				INFOPLIST_FILE = NarolaGroups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;
+				PRODUCT_BUNDLE_IDENTIFIER = com.votextmedia.wink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cf4671c8-3d93-4b1b-82a0-7652ba8dc73d";
+				PROVISIONING_PROFILE_SPECIFIER = "Wink Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -705,16 +796,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QR38U6E8CQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NarolaGroups/Frameworks",
 				);
+				GCC_PREFIX_HEADER = /Users/apple/Documents/Anita/Projects/NarolaGems/SourceTree/App/NarolaGroups/Constants/PrefixHeader.pch;
 				INFOPLIST_FILE = NarolaGroups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpn.NarolaGroups;
+				PRODUCT_BUNDLE_IDENTIFIER = com.votextmedia.wink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cf4671c8-3d93-4b1b-82a0-7652ba8dc73d";
+				PROVISIONING_PROFILE_SPECIFIER = "Wink Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
